@@ -1,0 +1,60 @@
+/* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      color: #d82c2c;
+      text-align:center;
+      padding-left: 500px;
+    }
+
+    .boxed {
+      margin: auto;
+      border: 1px solid gray;
+      font-size: 30px;
+      height: 75px;
+      width: 800px;
+      text-align: center;
+    }
+
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 300px}
+
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 162%;
+    }
+
+    .counter-style{
+      font-size: 15px;
+    }
+
+    ol {
+        margin:auto;
+    }
+    ol li {
+        text-align:center;
+        padding-right: 20px;
+        list-style-position:inside; /* so that the bullet points are also centered */
+    }
+    ol li div {
+        display:inline; /* so that the bullet points aren't above the content */
+    }
+
+
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #000;
+      color: white;
+      padding: 20px;
+    }
+
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;}
+    }
