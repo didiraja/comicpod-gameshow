@@ -1,60 +1,109 @@
-/* Remove the navbar's default margin-bottom and rounded borders */
-    .navbar {
-      margin-bottom: 0;
-      border-radius: 0;
-      color: #d82c2c;
-      text-align:center;
-      padding-left: 500px;
-    }
+body {
 
-    .boxed {
-      margin: auto;
-      border: 1px solid gray;
-      font-size: 30px;
-      height: 75px;
-      width: 800px;
-      text-align: center;
-    }
+	background-color: #f1f1f1;
+	font-family: 'Open Sans', sans-serif;
+	
+}
 
-    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-    .row.content {height: 300px}
+h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
+	
+	font-weight: 600;
+}
 
-    /* Set gray background color and 100% height */
-    .sidenav {
-      padding-top: 20px;
-      background-color: #f1f1f1;
-      height: 162%;
-    }
+#top {
+	
+	background-color: #222;
+	padding-bottom: 10px;
+}
 
-    .counter-style{
-      font-size: 15px;
-    }
+#top h1 {
+	
+  color: #d82c2c;
+	
+}
 
-    ol {
-        margin:auto;
-    }
-    ol li {
-        text-align:center;
-        padding-right: 20px;
-        list-style-position:inside; /* so that the bullet points are also centered */
-    }
-    ol li div {
-        display:inline; /* so that the bullet points aren't above the content */
-    }
+#top h3 {
+	
+	margin-top: 00px;
+	
+}
+
+#main {
+	
+	
+	
+}
+
+.panel { background: transparent; }
+
+.panel h1 {
+	
+	margin: 00px;
+	
+}
+
+.boxed {
+	background-color: white;
+	border-radius: 5px;
+	border: 1px solid #BDC3C7;
+	
+	
+	margin: auto;
+	font-size: 30px;
+	height: 75px;
+	width: 800px;
+	text-align: center;
+}
+
+.counter-style {
+	padding-top: 10px;
+	font-weight: 400;
+    font-size: 20px;
+    font-style: italic;
+}
 
 
-    /* Set black background color, white text and some padding */
-    footer {
-      background-color: #000;
-      color: white;
-      padding: 20px;
-    }
+#main li {
+	
+	padding: 5px 00px;
+	font-size: 20px;
+	
+}
 
-    /* On small screens, set height to 'auto' for sidenav and grid */
-    @media screen and (max-width: 767px) {
-      .sidenav {
-        height: auto;
-        padding: 15px;
-      }
-      .row.content {height:auto;}
-    }
+
+.sides-arrow {
+	
+	display: inline;
+	font-weight: bold;
+}
+
+.sides-arrow, .sides-text {
+	
+	font-size: 20px;
+
+}
+
+/* Set gray background color and 100% height */
+#sidenav {
+  padding-top: 20px;
+  background-color: #f1f1f1;
+  height: 162%;
+}
+
+
+
+/* Set black background color, white text and some padding */
+footer {
+  background-color: #000;
+  color: white;
+  padding: 20px;
+}
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+  #sidenav {
+	height: auto;
+	padding: 15px;
+  }
+  .row.content {height:auto;}
+}

@@ -1,88 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>ComicPod Gameshows</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<title>ComicPod Gameshow</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
+
 <body>
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header text-center">
-      <center><h1>ComicPod Gameshow</h1></center>
-      <h3><a href="#">terrazero.com.br</a></h3>
-    </div>
-  </div>
-</nav>
+<section id="top">
 
-<div class="container-fluid text-center">
-  <div class="row content">
-    <div class="col-sm-2 sidenav">
-      <h2>Time 1</h2>
-      <p><a href="#">BRUNÃO</a></p>
-      <p><a href="#">PEDRO</a></p>
-      <p><a href="#">DICO</a></p>
-      <br>
-      <div style="float: center">
-      Pontos:<br>
-      <input type="number" name="email" style="font-size: 80px; height: 100px; width: 100px; text-align: center"><br><br>
-    </div>
+	<div class="container">
 
-    </div>
-    <div class="col-sm-8 text-center">
-      <h1>TEMA ATUAL</h1>
-      <div class="boxed" id="theme"><br><br></div><br>
-      <input type="button" value="7 MINUTOS!" onclick="getTime(420)" />
-      <input type="button" value="5 MINUTOS!" onclick="getTime(300)" /><br>
-      <input type="button" value="Cancelar" onclick="getTime(0)" /><br>
+		<div class="col-md-12 text-center">
 
+			<h1>ComicPod Gameshow</h1>
+			<h3><a href="https://http://www.terrazero.com.br/">TerraZero.com.br</a></h3>
 
-      <div class="counter-style" id="counter"></div>
-      <h1>TEMAS DE HOJE</h1>
-      <div class="text-center">
-        <ol>
-          <input type="checkbox" id="sub-0"> 1. O que está acontecendo aqui?</input><br>
-          <input type="checkbox" id="sub-1"> 2. O que está acontecendo aqui?</input><br>
-          <input type="checkbox" id="sub-2"> 3. O que está acontecendo aqui?</input><br>
-          <input type="checkbox" id="sub-3"> 4. O que está acontecendo aqui?</input><br>
-          <input type="checkbox" id="sub-4"> 5. O que está acontecendo aqui?</input><br>
-        </ol>
-        <br/>
-      </div>
-      <input type="button" value="SORTEAR PRÓXIMO TEMA!" onclick="drawNext()" />
-      <input type="button" value="SORTEAR LADOS!" onclick="drawSides()" />
-      <div id="sides"></div>
-    </div>
+		</div>
 
-    <div class="col-sm-2 sidenav">
-      <h2>Time 2</h2>
-      <p><a href="#">MORCELLI</a></p>
-      <p><a href="#">IGOR</a></p>
-      <p><a href="#">ERIKA</a></p>
-      <br>
-      <div style="float: center">
-      Pontos:<br>
-      <input type="number" style="font-size: 80px; height: 100px; width: 100px; text-align: center"><br><br>
-      </div>
-      <br>
-    </div>
-    <div class="col-sm-8 text-center">
+	</div>
 
-    </div>
-  </div>
-</div>
+</section>
+
+<section id="content">
+	<div class="container-fluid text-center">
+
+		<div class="row content">
+
+			<div id="sidenav" class="col-sm-2">
+
+				<h2>Time 1</h2>
+
+				<p><a href="#">BRUNÃO</a></p>
+				<p><a href="#">PEDRO</a></p>
+				<p><a href="#">DICO</a></p>
+
+				<br>
+
+				<div style="float: center">
+
+					Pontos:
+					<br><br>
+					<input type="number" name="email" style="font-size: 80px; height: 100px; width: 100px; text-align: center"><br><br>
+
+				</div>
+
+			</div>
+
+			<div id="main" class="col-sm-8 text-center">
+
+				<br />
+
+				<div class="panel panel-primary">
+
+					<div class="panel-heading">
+						<h1 class="text-uppercase">Tema Atual</h1>
+					</div>
+
+					<div class="panel-body">
+						<div class="boxed" id="theme"><br><br></div>
+					</div>
+
+					<div class="btn-group" role="group" aria-label="...">
+						<button type="button" class="btn btn-lg btn-default" onclick="getTime(420)">7 Minutos</button>
+						<button type="button" class="btn btn-lg btn-default" onclick="getTime(300)">5 minutos</button>
+						<button type="button" class="btn btn-lg btn-danger" onclick="getTime(0)">Cancelar</button>
+				
+						<div class="counter-style" id="counter"></div>
+						
+					</div>
+					
+					<br /><br />
+
+				</div>
+				
+				<div class="panel panel-default">
+					
+				  <div class="panel-heading">
+					<h1 class="text-uppercase">Temas de Hoje</h1>
+				  </div>
+					
+				  <div class="panel-body">
+					
+					  <div class="text-center">
+						<ul class="list-unstyled">
+
+							<li><input type="checkbox" id="sub-0"> 1. O que está acontecendo aqui</li>
+							<li><input type="checkbox" id="sub-1"> 2. O que está acontecendo aqui</li>
+							<li><input type="checkbox" id="sub-2"> 3. O que está acontecendo aqui</li>
+							<li><input type="checkbox" id="sub-3"> 4. O que está acontecendo aqui</li>
+							<li><input type="checkbox" id="sub-4"> 5. O que está acontecendo aqui</li>
+
+						</ul>
+					</div>
+					
+					<button type="button" class="btn btn-success text-uppercase" onclick="drawNext()">Sortear próximo tema</button>
+					  <button type="button" class="btn btn-info text-uppercase" onclick="drawSides()">Sortear Lados</button> 
+					  
+					<div id="sides"></div>
+					  
+				  </div>
+					
+				</div>
+				
+			</div>
+
+			<div id="sidenav" class="col-sm-2">
+				<h2>Time 2</h2>
+				<p><a href="#">MORCELLI</a></p>
+				<p><a href="#">IGOR</a></p>
+				<p><a href="#">ERIKA</a></p>
+				<br>
+				<div style="float: center">
+					Pontos:
+					
+					<br/><br/>
+					
+					<input type="number" style="font-size: 80px; height: 100px; width: 100px; text-align: center"><br><br>
+				</div>
+				<br>
+			</div>
+
+		</div>
+	</div>
+</section>
 
 <footer class="container-fluid text-center">
-  <p>APOIE O TERRA ZERO NO PADRIM!
-  <a href="#">padrim.com.br/terrazero</a></p>
+	<p>APOIE O TERRA ZERO NO PADRIM!
+		<a href="#">padrim.com.br/terrazero</a></p>
 </footer>
 
-<script src="js/app.js"></script>
+	<script src="js/app.js"></script>
 
 </body>
+
 </html>

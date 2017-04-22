@@ -38,10 +38,12 @@ function drawNext(){
 };
 
 function drawSides(){
-  sides = ["<b style='color:green;'>\tConcorda</b>", "<b style='color:red;'>\tDiscorda</b>"];
+  arrowLeft = "<p class='sides-arrow'><---</p>";
+  arrowRight = "<p class='sides-arrow'>---></p>";	
+  sides = ["<b class='sides-text' style='color:green;'>\tConcorda\t</b>", "<b class='sides-text' style='color:red;'>\tDiscorda\t</b>"];
   shuffle(sides);
 
-  document.getElementById('sides').innerHTML = "<---" + sides + " --->";
+  document.getElementById('sides').innerHTML = "<br />" + arrowLeft + sides + arrowRight;
 }
 
 function shuffle(array) {
