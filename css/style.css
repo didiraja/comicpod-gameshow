@@ -13,7 +13,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 #top {
 	
 	background-color: #222;
-	padding-bottom: 10px;
+	padding: 20px 00px;
 }
 
 #top h1 {
@@ -25,8 +25,15 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 #top h3 {
 	
 	margin-top: 00px;
+	color: #337ab7;
+	font-weight: 400;
+    margin-left: 10px;
 	
 }
+
+#top h1, #top h3 {
+	display: inline;
+} 
 
 #main {
 	
@@ -81,6 +88,10 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 	
 	font-size: 20px;
 
+}
+
+footer p {
+	margin: 00px;
 }
 
 /* Set gray background color and 100% height */
